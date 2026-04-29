@@ -97,7 +97,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 <img alt="1" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%201.png" width="512" height="512" /> <br>
 
-### Test 1
+### 测试 1
 - 喷嘴：250°C
 - 热床：100°C
 - 加热器：关闭
@@ -109,7 +109,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 <img alt="2" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%202.png" width="1024" height="1024" /> <br>
 时间 | 温度(封箱内温度)  | 室温(封箱外温度) | 加热器开/关
 
-### Test 2
+### 测试 2
 - 喷嘴：250°C
 - 热床：100°C
 - 加热器：750W
@@ -118,7 +118,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 - 环境温度：16.8°C
 - 封箱温度：50–60°C
 
-### Test 1 & 2：ABS 打印测试
+### 测试 1 & 2：ABS 打印测试
 
 这两次测试说明，手动控制 750W 加热器会让封箱温度非常不稳定，波动范围达到了 **36.7°C 到 61°C**。打印大约 40 分钟后失败，这个结果基本就能解释得通了。
 
@@ -132,7 +132,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 <img alt="3" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%203.png" width="1024" height="1024" /> <br>
 
-### Test 3
+### 测试 3
 #### 假设：热平衡与模型位置
 把加热功率降到大约 **400W** 后，封箱内终于进入了一个近似稳定的热平衡状态。和前面 750W 的测试相比，这次手动调节造成的温度起伏小了很多，封箱温度基本稳定在 **42°C 到 44°C** 之间。
 
@@ -152,7 +152,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 <img alt="4" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%204.png" width="1024" height="1024" /> <br>
 
-### Test 4
+### 测试 4
 - 速度：100%
 - 胶水：有
 - 加热器：350W
@@ -167,7 +167,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 ---
 
-### Test 5
+### 测试 5
 - 速度：50%
 - 胶水：有
 - 加热器：375W
@@ -182,7 +182,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 ---
 
-### Test 6
+### 测试 6
 - 速度：100%
 - 胶水：有
 - 加热器：370W
@@ -211,7 +211,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 <img alt="5" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%205.png" width="1024" height="1024" /> <br>
 
-### Test 7
+### 测试 7
 - 速度：100%
 - 胶水：无
 - 加热器：370W
@@ -231,7 +231,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 ---
 
-### Test 8
+### 测试 8
 - 速度：50%
 - 胶水：无
 - 加热器：370W
@@ -245,7 +245,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 ---
 
-### Test 9
+### 测试 9
 - 速度：100%
 - 胶水：无
 - 加热器：370W
@@ -273,7 +273,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 ---
 
-### Test 10
+### 测试 10
 - 速度：100%
 - 胶水：无
 - 加热器：370W
