@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%200.png" width="512" height="512" /> <br>
+<img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2010.jpeg" width="512" height="512" /> <br>
 
 [English](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/README.md) | [中文](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/Chinese/README.md)) <br>
 # ABS打印测试研究
@@ -203,7 +203,9 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 ---
 
-<img alt="8" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%208.png" width="512" height="512" /> <br>
+<img alt="8" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%208.png" width="512" height="512" />
+<img alt="9" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%209.jpeg" width="512" height="512" /> <br>
+
 **新升级：** 我把封箱隔热材料升级了，内部四面和顶面都贴了 10mm 镀铝海绵，缝隙也用胶带封起来，尽量减少漏风和空气流动。<br>
 **新升级：** 另外还加了控温插座，用来自动调节温度。
 加热器在 **48°C 及以下** 时开启，在 **51°C 及以上** 时关闭。  
