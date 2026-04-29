@@ -329,7 +329,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 
 ## 7. 可行的解决方向
 
-<img alt="7" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%207.png" width="1024" height="1024" /> <br>
+<img alt="11" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2011.png" width="1024" height="1024" /> <br>
 
 研究过程中可以考虑的解决方案/升级方向有这些，感觉就像在游戏里对道具进行升级一样：
 
