@@ -107,6 +107,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 - 封箱温度：25°C
 
 <img alt="2" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%202.png" width="1024" height="1024" /> <br>
+时间|温度|室温(封箱外温度)|加热器开/关
 
 ### Test 2
 - 喷嘴：250°C
