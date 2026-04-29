@@ -2,11 +2,9 @@
 
 <img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%200.png" width="512" height="512" /> <br>
 
-[English](README.md) | [中文](README_CN.md) <br>
+[English](https://github.com/R2S-ver/ABS-3D-Printing-Guide/tree/main) | [中文](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/Chinese/README.md)) <br>
 
 *一份关于 ABS 打印表现、温度控制、故障分析和工艺优化的实践型研究记录。*
-
-> 我想记录下打印时到底发生了什么，为什么会发生，以及如何让他更稳定一些。
 
 </div>
 
