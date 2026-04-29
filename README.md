@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%200.png" width="1024" height="1024" /> <br>
+<img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%200.png" width="512" height="512" /> <br>
 
 [English](README.md) | [中文](README_CN.md) <br>
 
