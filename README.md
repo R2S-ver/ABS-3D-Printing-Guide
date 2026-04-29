@@ -354,62 +354,145 @@ However, this may actually be a **negative optimization** in some cases, because
 
 ## 8. Current Conclusions
 
-This study showed that ABS printing is not determined by a single factor.  
-The result depends on the balance between enclosure temperature, airflow, bed adhesion, print speed, extrusion resistance, and hotend stability.
+This study shows that ABS printing is not governed by a single parameter, but by a **coupled system of thermal, mechanical, and flow-related variables**.
 
-### Conclusions
-- ABS needs a **stable thermal environment**.
-- Manual heating control creates temperature spikes and leads to failure.
-- A controlled enclosure temperature around **50–55°C** is much more useful than unstable overheating.
-- Heat creep can become a major problem if the enclosure becomes too hot and wraping when too cold.
-- First-layer failure may come from extrusion weakness, not only from bed adhesion.
-- The extruder gear and hotend condition are just as important as slicer settings.
-- From Test 9 onward, the process became stable after the extrusion problem was identified and recovered.
-
-Overall, the study suggests that ABS can be printed successfully at home, but only when the printer is treated as a **system** rather than a single machine setting problem.
+Successful printing is achieved only when these variables reach a stable balance, rather than being individually optimized.
 
 ---
 
-#### Enclosure Understanding
+### 8.1 Critical factors
 
-Initially, I assumed that the main purpose of an enclosure was to create a **stable thermal environment**. However, based on practical testing, this understanding turned out to be different.
-In reality, the enclosure plays a more critical role in **controlling airflow rather than simply retaining heat**.
+ABS printing should be treated as a **thermal management problem first**, and a slicing problem second.
 
-##### Key functions of the enclosure
+The dominant factors are:
+- Enclosure temperature stability
+- Airflow control (not just temperature)
+- Heat distribution within the build volume
+- Extrusion resistance and filament state
 
-**1. Airflow isolation (primary function)**  
-The enclosure prevents external airflow from disturbing the printing process.  
-Without an enclosure, ambient air movement can directly interact with the heated bed and printed part, causing uneven cooling and temperature fluctuations. This is one of the main causes of warping in ABS prints.
-
-In this sense, the enclosure acts as a **barrier against uncontrolled convection**, rather than just a passive thermal container.
+Instability in any of these will propagate through the system and result in failure (warping, clogging, or adhesion loss).
 
 ---
+
+### 8.2 Key Constraints
+
+From the experiments, several practical constraints can be defined:
+
+- ABS requires a **stable enclosure temperature window (~50–55°C)**  
+  → Below this range: warping becomes dominant  
+  → Above this range: heat creep and extrusion instability increase  
+
+- **Thermal stability is more important than peak temperature**  
+  → Rapid fluctuations are more harmful than slightly suboptimal temperatures  
+
+- **Manual heating control is inherently unstable**  
+  → Leads to overshoot and delayed correction  
+  → Results in oscillating thermal conditions  
+
+- **Extrusion reliability is tightly coupled to thermal conditions**  
+  → High ambient temperature can soften filament too early  
+  → Low temperature increases extrusion resistance  
+
+- **First-layer failure is not purely an adhesion problem**  
+  → It can originate from insufficient extrusion force or partial clogging  
+
+---
+
+### 8.3 Failure Identified
+
+The main failure observed in this research:
+
+- **Warping**  
+  Caused by uneven cooling and external airflow interaction  
+
+- **Heat creep**  
+  Caused by excessive ambient temperature affecting the hotend cooling zone  
+
+- **Extrusion failure / clogging**  
+  Caused by:
+  - Partial blockage in the hotend  
+  - Insufficient extruder grip  
+  - Premature filament softening  
+
+- **Thermal instability**  
+  Caused by:
+  - Manual heater control  
+  - Poor enclosure insulation  
+  - Sensor misplacement  
+
+These failure modes are not independent — they are strongly interconnected.
+
+---
+
+### 8.4 Enclosure
+
+The enclosure is often misunderstood as a passive heating solution.  
+In practice, its primary function is **airflow control**, not heat generation.
+
+#### functions
+
+**1. Airflow isolation (primary role)**  
+Prevents uncontrolled convection from disturbing the thermal field.  
+This is the main factor in reducing warping.
 
 **2. Gas and particle containment**  
-Another important function is isolating fumes and particles generated during printing.  
-ABS printing can release odors and potentially harmful emissions. The enclosure helps contain these within a limited space, making it easier to manage ventilation and improving overall safety.
+Limits the spread of fumes and particles generated during ABS printing.  
+Improves safety and makes ventilation more manageable.
+
+**3. Secondary thermal retention**  
+The enclosure alone provides limited insulation.  
+Significant improvement only occurs after adding **10 mm aluminum-coated foam insulation**, which reduced heat loss by approximately **75%**.
 
 ---
 
-**3. Limited thermal insulation**  
-The enclosure does provide some level of heat retention, but its insulation performance is relatively limited on its own.
+### 8.5 Passive Thermal Behavior
 
-The **main improvement in thermal stability** came from the later upgrade where the interior was lined with **10 mm aluminum-coated foam insulation**. This significantly reduced heat loss by ~75% and made temperature control much more stable.
+With improved insulation, the enclosure begins to behave as a **thermal buffer system**:
+
+- Heat from the bed and hotend accumulates inside the enclosure  
+- Temperature decay becomes slow and predictable  
+- External disturbances are minimized  
+
+Under these conditions:
+
+- Small prints can be completed **without active heating**
+- The system can maintain a usable thermal range passively for a limited time
 
 ---
 
-##### Additional observation
+### 8.6 Cooling Behavior (Post-Print Phase)
 
-During later tests, it was observed that for **smaller prints**, it is sometimes possible to achieve successful results **without using an external heater**.
+The enclosure also plays an important role after printing:
 
-This is because:
-- Heat generated by the heated bed and hotend accumulates inside the enclosure
-- The temperature drops relatively slowly due to reduced airflow
-- A sufficiently warm and stable environment can still be maintained for a certain period
+- It enables **gradual passive cooling**
+- Reduces internal stress caused by rapid temperature drop
 
-This suggests that, under controlled conditions, the enclosure with upgraded isolation can passively maintain a usable thermal environment for ABS printing, especially for smaller parts.
-And also helps with gradual passive cooling after the print is completed (**Do not remove the printed part immediately after printing**).
+**Important:**
+Do not remove the printed part immediately after printing.  
+Allow it to cool down slowly inside the enclosure to minimize warping and internal stress.
 
+---
+
+### 8.7 Key Turning Point
+
+The system became stable only after:
+
+- Enclosure temperature was properly controlled (auto thermostat)
+- Thermal fluctuations were reduced
+- Extrusion path issues were identified and manually corrected
+
+From **Test 9 onward**, the process transitioned from unstable to repeatable.
+
+---
+
+### 8.8 Final Insight
+
+ABS printing at home is not limited by hardware capability alone, but by **system stability**.
+
+A consumer 3D printer can reliably print ABS only when:
+- Thermal behavior is controlled
+- Airflow is minimized
+- Extrusion remains mechanically stable
 ---
 
 ## 9. Future Work
