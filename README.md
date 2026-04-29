@@ -199,7 +199,7 @@ At this point, I want to give up trying on ABS and switching to **PETG or ASA** 
 The heater turns on at 48°C or below and turns off at 51°C or above.
 （In practice, after the heater is switched off, the enclosure temperature continues to rise by an additional 2–3°C before gradually cooling down.）<br>
 <img alt="5" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%205.png" width="1024" height="1024" /> <br>
-<img alt="6" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%206.png" width="1024" height="1024" /> <br>
+
 
 ### Test 7
 - Speed: 100%
@@ -259,6 +259,8 @@ After manually applying additional extrusion force, printing could continue norm
 - Resume normal extrusion
 
 **I suspect that the insufficient friction in the extruder may be caused by an excessively high ambient temperature, which leads to the filament softening prematurely in the upstream section of the extruder. As a result, it cannot be reliably fed through to the nozzle.**
+
+<img alt="6" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%206.png" width="1024" height="1024" /> <br>
 
 ---
 
