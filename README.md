@@ -525,4 +525,5 @@ ABS 在家用环境中是可以稳定打印的，但前提是：
 
 ## 11. 参考资料
 
-[A1 产品维护与保养](https://wiki.bambulab.com/zh/a1/maintenance/basic-maintenance)
+1. [A1 产品维护与保养](https://wiki.bambulab.com/zh/a1/maintenance/basic-maintenance)
+2. [什么是热蠕变？](https://wiki.bambulab.com/zh/filament-acc/filament/heat-creep)
