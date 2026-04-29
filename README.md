@@ -357,7 +357,7 @@ However, this may actually be a **negative optimization** in some cases, because
 This study showed that ABS printing is not determined by a single factor.  
 The result depends on the balance between enclosure temperature, airflow, bed adhesion, print speed, extrusion resistance, and hotend stability.
 
-### Main conclusions
+### Conclusions
 - ABS needs a **stable thermal environment**.
 - Manual heating control creates temperature spikes and leads to failure.
 - A controlled enclosure temperature around **50–55°C** is much more useful than unstable overheating.
