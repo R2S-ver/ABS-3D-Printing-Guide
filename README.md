@@ -97,6 +97,7 @@ The following variables were adjusted during the tests:
 - Nozzle: 250°C
 - Bed: 100°C
 - Heater: off
+- Temperature control: manual
 - Glue: none
 - Ambient temperature: 17°C
 - Enclosure temperature: 25°C
@@ -105,6 +106,7 @@ The following variables were adjusted during the tests:
 - Nozzle: 250°C
 - Bed: 100°C
 - Heater: 750W
+- Temperature control: manual
 - Glue: none
 - Ambient temperature: 16.8°C
 - Enclosure temperature: 50–60°C
@@ -142,6 +144,7 @@ This result suggests that, until the ideal ABS printing temperature of around **
 - Speed: 100%
 - Glue: yes
 - Heater: 350W
+- Temperature control: manual
 - Fan speed: low
 - Build plate: cleaned
 - Brim and draft shield: enabled
@@ -156,6 +159,7 @@ This result suggests that, until the ideal ABS printing temperature of around **
 - Speed: 50%
 - Glue: yes
 - Heater: 375W
+- Temperature control: manual
 - Fan speed: low
 - Build plate: cleaned
 - Brim and draft shield: enabled
@@ -170,6 +174,7 @@ However, it was observed that the **375W heater** could maintain a stable temper
 - Speed: 100%
 - Glue: yes
 - Heater: 370W
+- Temperature control: manual
 - Fan speed: low
 - Build plate: cleaned
 - Brim and draft shield: enabled
@@ -186,10 +191,10 @@ At this point, I want to give up trying on ABS and switching to **PETG or ASA** 
 
 ---
 
-**NEW UPGRADE:** The enclosure insulation was upgraded by lining the interior with 10 mm aluminum-coated foam on all four sides and the top. Gaps and seams were sealed with tape to minimize air leakage and prevent airflow.
+**NEW UPGRADE:** The enclosure insulation was upgraded by lining the interior with 10 mm aluminum-coated foam on all four sides and the top. Gaps and seams were sealed with tape to minimize air leakage and prevent airflow. <br>
 **NEW UPGRADE:** A thermostat-controlled outlet was also added to automatically regulate temperature.
 The heater turns on at 48°C or below and turns off at 51°C or above.
-（In practice, after the heater is switched off, the enclosure temperature continues to rise by an additional 2–3°C before gradually cooling down.）
+（In practice, after the heater is switched off, the enclosure temperature continues to rise by an additional 2–3°C before gradually cooling down.）<br>
 
 ### Test 7
 - Speed: 100%
@@ -200,7 +205,7 @@ The heater turns on at 48°C or below and turns off at 51°C or above.
 - Build plate: cleaned
 - Brim and draft shield: enabled
 - Material profile: generic ABS
-- Upgraded isolation: 10
+- Upgraded isolation: 10mm aluminum-coated foam
 
 This test had a properly controlled enclosure temperature, but a new issue appeared:
 
