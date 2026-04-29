@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%200.png" width="512" height="512" /> <br>
+<img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%200.png" width="1024" height="1024" /> <br>
 
 [English](README.md) | [中文](README_CN.md) <br>
 
@@ -94,7 +94,7 @@ The following variables were adjusted during the tests:
 ---
 
 ## 5. Experimental Log
-<img alt="1" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%201.png" width="512" height="512" /> <br>
+<img alt="1" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%201.png" width="1024" height="1024" /> <br>
 ### Test 1
 - Nozzle: 250°C
 - Bed: 100°C
@@ -103,7 +103,7 @@ The following variables were adjusted during the tests:
 - Glue: none
 - Ambient temperature: 17°C
 - Enclosure temperature: 25°C
-<img alt="2" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%202.png" width="512" height="512" /> <br>
+<img alt="2" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%202.png" width="1024" height="1024" /> <br>
 ### Test 2
 - Nozzle: 250°C
 - Bed: 100°C
@@ -123,7 +123,7 @@ This excessive heat caused **heat creep**, which warmed the hotend cooling path 
 To reduce warping without overheating the hardware, the enclosure temperature should be kept constant at around **50–55°C**. The best solution is a **thermostat-controlled outlet** with the sensor placed directly inside the enclosure. A hysteresis of about **5°C** would help eliminate dangerous temperature spikes caused by manual delay.
 
 ---
-<img alt="3" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%203.png" width="512" height="512" /> <br>
+<img alt="3" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%203.png" width="1024" height="1024" /> <br>
 ### Test 3
 #### Hypothesis: thermal equilibrium and part positioning
 By reducing heater power to around **400W**, a quasi-stationary thermal balance was achieved. In contrast to the earlier 750W tests, where manual regulation caused strong temperature swings, the enclosure temperature now remained relatively stable between **42°C and 44°C**.
@@ -141,7 +141,7 @@ Because the parts were partially connected through the brim, they could mechanic
 This result suggests that, until the ideal ABS printing temperature of around **50–55°C** is reached, both a stable heat balance and the physical placement of parts inside the printer remain critical.
 
 ---
-<img alt="4" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%204.png" width="512" height="512" /> <br>
+<img alt="4" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%204.png" width="1024" height="1024" /> <br>
 ### Test 4
 - Speed: 100%
 - Glue: yes
@@ -193,13 +193,13 @@ At this point, I want to give up trying on ABS and switching to **PETG or ASA** 
 
 ---
 
-<img alt="8" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%208.png" width="512" height="512" /> <br>
+<img alt="8" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%208.png" width="1024" height="1024" /> <br>
 **NEW UPGRADE:** The enclosure insulation was upgraded by lining the interior with 10 mm aluminum-coated foam on all four sides and the top. Gaps and seams were sealed with tape to minimize air leakage and prevent airflow. <br>
 **NEW UPGRADE:** A thermostat-controlled outlet was also added to automatically regulate temperature.
 The heater turns on at 48°C or below and turns off at 51°C or above.
 （In practice, after the heater is switched off, the enclosure temperature continues to rise by an additional 2–3°C before gradually cooling down.）<br>
-<img alt="5" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%205.png" width="512" height="512" /> <br>
-<img alt="6" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%206.png" width="512" height="512" /> <br>
+<img alt="5" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%205.png" width="1024" height="1024" /> <br>
+<img alt="6" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%206.png" width="1024" height="1024" /> <br>
 
 ### Test 7
 - Speed: 100%
@@ -315,7 +315,7 @@ In total, **11 tests** were performed: the first **8** failed, and **successful 
 
 ## 7. Possible Solutions
 
-<img alt="7" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%207.png" width="512" height="512" /> <br>
+<img alt="7" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%207.png" width="1024" height="1024" /> <br>
 
 The following solutions/upgrades are possible during the study:
 
