@@ -23,7 +23,8 @@
 
 ## 1. Overview 
 
-Welcome to this research log! This repositories documents my experimental journey to understand **ABS filament printing**. ABS is notorious for warping and shrinking, and this study focuses on environmental temperature control, hardware reliability and mitigating "Heat Creep" through a series of tests.
+Welcome to this research log! <br> 
+This repositories documents my experimental journey to understand **ABS filament printing**. ABS is notorious for warping and shrinking, and this study focuses on environmental temperature control, hardware reliability and mitigating "Heat Creep" through a series of tests.
 
 ---
 ## 2. Research Goal
