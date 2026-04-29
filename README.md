@@ -3,7 +3,7 @@
 <img alt="LOGO" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%200.png" width="512" height="512" /> <br>
 
 [English](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/README.md) | [中文](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/Chinese/README.md)) <br>
-
+# ABS打印测试研究
 *一份关于 ABS 打印表现、温度控制、故障分析和工艺优化的实践型研究记录。*
 
 </div>
