@@ -105,7 +105,7 @@ The following variables were adjusted during the tests:
 - Ambient temperature: 17°C
 - Enclosure temperature: 25°C
 - 
-<img alt="2" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%202.png" width="512" height="512" /> <br>
+<img alt="2" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%202.png" width="1024" height="1024" /> <br>
 
 ### Test 2
 - Nozzle: 250°C
