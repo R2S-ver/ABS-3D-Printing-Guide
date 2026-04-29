@@ -2,8 +2,6 @@
 
 # ABS 3D Printing Material Study Logbook
 *A practical research log on ABS printing behavior, thermal control, failure analysis, and process optimization.*
-
-> A personal study project focused on real-world printing behavior rather than a purely academic report.  
 > The goal is to document what actually happens during printing, why it happens, and what can be improved in a practical way.
 
 </div>
@@ -24,12 +22,9 @@
 
 ## 1. Overview
 
-This repository documents my ongoing study of **ABS 3D printing material**.
-
-Instead of treating this as a formal laboratory report, I am recording it as a structured research log: the tests I ran, the problems I encountered, the reasoning behind each failure, and the improvements that eventually led to stable printing.
-
-The main focus of this project is not only whether ABS can be printed successfully, but also **how** it behaves under different thermal and mechanical conditions, and what kind of setup is needed to make the process reliable.
-
+Welcome to this research log! 
+This section documents my experimental journey to master **ABS filament printing**. 
+ABS is notorious for warping and shrinking, and this study focuses on environmental temperature control, hardware reliability, and mitigating "Heat Creep" through a series of 11 controlled tests.
 ---
 
 ## 2. Research Goal
