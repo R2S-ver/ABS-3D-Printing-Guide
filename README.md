@@ -522,4 +522,5 @@ Overall, this project taught me that material testing is not only about whether 
 ---
 
 ## 11. References
-[- Bambulab Basic maintenance](https://wiki.bambulab.com/en/a1/maintenance/basic-maintenance)
+1. [Bambulab Basic maintenance](https://wiki.bambulab.com/en/a1/maintenance/basic-maintenance)
+2. [What is heat creep?](https://wiki.bambulab.com/zh/filament-acc/filament/heat-creep)
