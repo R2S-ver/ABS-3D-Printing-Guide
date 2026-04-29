@@ -1,7 +1,7 @@
 <div align="center">
   
 [English](README.md) | [中文](README_CN.md)
-
+<img alt="LOGO" src="[https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS 3D Printing Guide 0.png]" width="256" height="256" />
 *A practical research log on ABS printing behavior, thermal control, failure analysis, and process optimization.*
 > The goal is to document what actually happens during printing, why it happens, and what can be improved in a practical way.
 
