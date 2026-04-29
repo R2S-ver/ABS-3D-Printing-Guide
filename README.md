@@ -186,6 +186,11 @@ At this point, I want to give up trying on ABS and switching to **PETG or ASA** 
 
 ---
 
+**NEW UPGRADE:** The enclosure insulation was upgraded by lining the interior with 10 mm aluminum-coated foam on all four sides and the top. Gaps and seams were sealed with tape to minimize air leakage and prevent airflow.
+**NEW UPGRADE:** A thermostat-controlled outlet was also added to automatically regulate temperature.
+The heater turns on at 48°C or below and turns off at 51°C or above.
+（In practice, after the heater is switched off, the enclosure temperature continues to rise by an additional 2–3°C before gradually cooling down.）
+
 ### Test 7
 - Speed: 100%
 - Glue: none
@@ -195,6 +200,7 @@ At this point, I want to give up trying on ABS and switching to **PETG or ASA** 
 - Build plate: cleaned
 - Brim and draft shield: enabled
 - Material profile: generic ABS
+- Upgraded isolation: 10
 
 This test had a properly controlled enclosure temperature, but a new issue appeared:
 
