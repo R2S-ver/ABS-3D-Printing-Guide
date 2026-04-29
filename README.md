@@ -20,7 +20,7 @@
 - [8. Current Conclusions](#8-current-conclusions)
 - [9. Future Work](#9-future-work)
 - [10. Self reflection](#10-reflection)
-- [10. References](#10-references)
+- [11. References](#11-references)
 ---
 
 ## 1. Overview 
