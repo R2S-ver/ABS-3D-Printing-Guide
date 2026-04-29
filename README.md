@@ -196,7 +196,7 @@ At this point, I want to give up trying on ABS and switching to **PETG or ASA** 
 
 ---
 
-<img alt="8" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%208.png" width="512" /> <br><img alt="9" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%209.jpeg" width="512" /> <br>
+<img alt="8" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%208.png" width="512" /> <img alt="9" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%209.jpeg" width="512" /> <br>
 **NEW UPGRADE:** The enclosure insulation was upgraded by lining the interior with 10 mm aluminum-coated foam on all four sides and the top. Gaps and seams were sealed with tape to minimize air leakage and prevent airflow. <br>
 **NEW UPGRADE:** A thermostat-controlled outlet was also added to automatically regulate temperature.
 The heater turns on at 48°C or below and turns off at 51°C or above.
