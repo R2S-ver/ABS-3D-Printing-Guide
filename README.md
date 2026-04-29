@@ -1,130 +1,370 @@
 <div align="center">
-<img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner%202.png" width="256" height="256" />
-  
-# ABS Printing Thermal Optimization & Reliability Study
-[English](README.md) | [中文](README_CN.md)
 
-Welcome to this research log! 
-This section documents my experimental journey to master **ABS filament printing**. 
-ABS is notorious for warping and shrinking, and this study focuses on environmental temperature control, hardware reliability, and mitigating "Heat Creep" through a series of 11 controlled tests.
+# ABS 3D Printing Material Study Logbook
+*A practical research log on ABS printing behavior, thermal control, failure analysis, and process optimization.*
 
-*The goal is to achieve a stable, repeatable "Set and Forget" printing process for high-temperature materials.*
+> A personal study project focused on real-world printing behavior rather than a purely academic report.  
+> The goal is to document what actually happens during printing, why it happens, and what can be improved in a practical way.
+
 </div>
 
-# **Table of Contents**
-- [3D Printing Research: ABS Thermal Management](#3d-printing-research-abs-thermal-management) <br>
-  1\. [Research Purpose & Goals](#1-research-purpose--goals) <br>
-  2\. [Material & Hardware Setup](#2-material--hardware-setup) <br>
-  3\. [Experimental Records (Test 1-11)](#3-experimental-records) <br>
-  4\. [Problem Analysis & Solutions](#4-problem-analysis--solutions) <br>
-  5\. [Final Conclusion](#5-final-conclusion) <br>
+# Table of Contents
+- [1. Overview](#1-overview)
+- [2. Research Goal](#2-research-goal)
+- [3. Material Background](#3-material-background)
+- [4. Test Setup](#4-test-setup)
+- [5. Experimental Log](#5-experimental-log)
+- [6. Problems Encountered](#6-problems-encountered)
+- [7. Possible Solutions](#7-possible-solutions)
+- [8. Current Conclusions](#8-current-conclusions)
+- [9. Future Work](#9-future-work)
+- [10. References](#10-references)
 
 ---
 
-<details open><summary>
+## 1. Overview
 
-## 🟧 3D Printing Research: ABS Thermal Management
-</summary>
+This repository documents my ongoing study of **ABS 3D printing material**.
 
-<details><summary>
+Instead of treating this as a formal laboratory report, I am recording it as a structured research log: the tests I ran, the problems I encountered, the reasoning behind each failure, and the improvements that eventually led to stable printing.
 
-### 🟦 1. Research Purpose & Goals
-</summary>
+The main focus of this project is not only whether ABS can be printed successfully, but also **how** it behaves under different thermal and mechanical conditions, and what kind of setup is needed to make the process reliable.
 
-ABS (Acrylonitrile Butadiene Styrene) requires a very specific thermal environment. This research aims to:
-- **Solve Warping:** Identify the ideal ambient temperature to prevent part deformation.
-- **Prevent Heat Creep:** Balance the internal enclosure temperature to ensure the cold-end of the extruder stays cool enough.
-- **Hardware Optimization:** Transition from manual temperature management to an automated, sensor-driven system.
-- **Process Reliability:** Move from a high failure rate (>70%) to a stable, successful printing workflow.
-</details>
+---
 
-<details><summary>
+## 2. Research Goal
 
-### 🟦 2. Material & Hardware Setup
-</summary>
+The purpose of this study is to understand ABS printing in a more practical and repeatable way.  
+ABS is a material that is often used for functional parts, but it is also known for being more demanding than PLA or other easier materials. Because of that, I wanted to investigate the actual causes behind common printing problems instead of relying only on general advice.
 
-| Category | Details |
-| :--- | :--- |
-| **Material** | Generic ABS Filament (Test 1-11) |
-| **Printer** | Custom Enclosed FDM Printer |
-| **Heating** | 750W / 370W Auxiliary Heater |
-| **Control** | Manual control vs. Automatic Thermostat Socket |
-| **Safety** | Enclosure with thermal insulation (Cardboard/External layers) |
-| **Adhesion** | Glue stick, Brim, and Draft Shields |
-</details>
+### Main goals of this study
+- Observe how ABS behaves under different enclosure temperatures and print conditions.
+- Identify the most common failure modes during printing.
+- Test how thermal stability affects warping, adhesion, and extrusion reliability.
+- Compare different tuning strategies and physical fixes.
+- Build a practical workflow that can later be reused for similar materials.
 
-<details><summary>
+---
 
-### 🟦 3. Experimental Records
-</summary>
+## 3. Material Background
 
-#### **Phase 1: Manual High-Power Tests (The Failure Phase)**
-* **Test 1 & 2:** * **Setup:** 750W Heater, Manual Control, No Glue.
-    * **Result:** **FAILED.** * **Observation:** Manual control led to extreme fluctuations (36.7°C to 61°C). High heat caused **Heat Creep**, causing filament to jam in the cooling neck. The ceiling sensor (behind cardboard) likely underestimated the actual bed temperature.
+**ABS (Acrylonitrile Butadiene Styrene)** is a widely used engineering thermoplastic known for its toughness, impact resistance, and relatively good heat resistance. Compared with PLA, it is generally more suitable for parts that need better mechanical durability or higher temperature tolerance.
 
-#### **Phase 2: Thermal Equilibrium & Positioning**
-* **Test 3:**
-    * **Setup:** Power reduced to 400W. 
-    * **Result:** Semi-stable (42°C - 44°C).
-    * **Insight:** Middle parts printed perfectly, while outer parts warped. This proved that the **center of the bed** is the thermal "Sweet Spot." Mechanical stress from cooling concentrated on the outer edges of the linked brims.
+However, ABS also comes with a few well-known challenges during FDM printing:
 
-#### **Phase 3: Speed & Adhesion Struggles**
-* **Test 4 & 5:**
-    * **Setup:** 350W-375W Heater, Low fan.
-    * **Result:** **FAILED.** * **Reason:** Ambient temp too low (~40°C) leading to jams. Test 5 showed the 375W heater *could* maintain 50-55°C, but a pre-existing clog from Test 4 ruined the run.
-* **Test 6:**
-    * **Result:** **FAILED.** * **Conjecture:** Wet filament or poor glue adhesion. Decision made to consider PETG/ASA or premium ABS (Bambulab).
+- It tends to **shrink while cooling**, which makes warping more likely.
+- It often benefits from a **stable heated enclosure**.
+- It can suffer from **poor first-layer adhesion** if the build surface or temperature setup is not well tuned.
+- If the thermal balance is poor, it may contribute to **heat creep** and extrusion problems.
+- It is more sensitive to ambient airflow, enclosure design, and print speed than easier materials.
 
-#### **Phase 4: Automation & Final Success (The Breakthrough)**
-* **Test 7 & 8:**
-    * **Setup:** **Auto-temperature control socket (370W)**, No Glue.
-    * **Issue:** First layer adhesion failure.
-* **Test 9, 10 & 11:**
-    * **Setup:** Manual filament force applied at start + Gear cleaning.
-    * **Result:** ✅ **SUCCESSFUL.**
-    * **Key Discovery:** The root cause was a combination of insufficient extruder gear friction (plastic gear) and a partial initial clog. By manually assisting the first 5cm of extrusion, the "half-stuck" state was cleared, allowing the automated thermal system to finish the job.
-</details>
+Because of these characteristics, ABS is often less forgiving than PLA, but when the printing environment is properly controlled, it can produce strong and functional parts.
 
-<details><summary>
+---
 
-### 🟦 4. Problem Analysis & Solutions
-</summary>
+## 4. Test Setup
 
-#### **⚠️ Tegengekomen problemen (Identified Issues)**
+The following variables were adjusted during the tests:
 
-* **Thermal Control:**
-    * Ambient Temp < 45°C causes **Warping**.
-    * Ambient Temp > 55°C causes **Overheating/Heat Creep**.
-    * Cold air flow causing localized shrinking (Requires **Draft Shield**).
-* **Mechanical/Material:**
-    * **Filament Grinding:** Gear slipping on the filament.
-    * **Heat Creep:** Filament softening too early in the hotend.
-    * **Moisture:** Filament too wet, leading to poor structural integrity.
-    * **Adhesion:** Inconsistent bed adhesion without proper preparation.
+- Nozzle temperature
+- Bed temperature
+- Enclosure temperature
+- Heater power
+- Cooling fan speed
+- Print speed
+- Glue use
+- Build plate cleanliness
+- Brim / draft shield use
+- Material profile
+- Auto temperature control
+- Extrusion behavior
 
-#### **✅ Mogelijke Oplossingen (Proposed Solutions)**
+### General printer conditions used throughout the study
+- ABS filament
+- Heated bed
+- Enclosure
+- Low fan speed
+- Cleaned build plate in later tests
+- Draft shield / brim in several tests
 
-| Solution | Status | Impact |
-| :--- | :--- | :--- |
-| **Thermostaat stopcontact** | Implemented | **High** - Stabilizes environment |
-| **Draft Shield / Skirt layers** | Implemented | **Medium** - Blocks cold drafts |
-| **Z-Hop (0.4mm)** | Recommended | **Medium** - Prevents nozzle strikes |
-| **Enclosure Insulation** | Planned | **Medium** - Energy efficiency |
-| **ASA Filament** | Alternative | **High** - Easier to print than ABS |
-| **Extruder Upgrade** | Discussion | **Caution** - Brass gears may increase heat transfer |
-| **Lower Print Speed (50%)** | Tested | **Medium** - Improves layer bonding |
-</details>
+---
 
-<details><summary>
+## 5. Experimental Log
 
-### 🟦 5. Final Conclusion
-</summary>
+### Test 1
+- Nozzle: 250°C
+- Bed: 100°C
+- Heater: off
+- Glue: none
+- Ambient temperature: 17°C
+- Enclosure temperature: 25°C
 
-Through 11 iterations, the research proves that **stability is more important than raw power**. 
-1. **Automation is Key:** Switching from a 750W manual heater to a 370W auto-thermostat controlled environment eliminated the thermal spikes that caused heat creep.
-2. **The "Sweet Spot":** For ABS, an ambient temperature of **50°C - 55°C** must be maintained.
-3. **Starting Resistance:** Many failures attributed to "clogs" were actually due to insufficient gear friction at the start. Manual "priming" or gear maintenance is essential.
-4. **Success Rate:** After optimizing these factors, the success rate moved from 0% (Tests 1-8) to **100% (Tests 9-11)**.
+### Test 2
+- Nozzle: 250°C
+- Bed: 100°C
+- Heater: 750W
+- Glue: none
+- Ambient temperature: 16.8°C
+- Enclosure temperature: 50–60°C
 
-#### [>Back to the Table of Contents<](#table-of-contents)
-</details>
+### Test 1 & 2: ABS printing test
+The ABS tests showed that manually controlling the 750W heater led to an extremely unstable enclosure temperature, fluctuating between **36.7°C and 61°C**, which directly explains the failed print after about 40 minutes.
+
+A critical point is that the temperature sensor was mounted high in the ceiling layer, separated from the internal space by a cardboard layer. Because of this, the measured 60°C was likely an underestimate. Since the sensor was closer to the outer wall and cooled down faster, the actual temperature near the bed was probably even higher.
+
+This excessive heat caused **heat creep**, which warmed the hotend cooling path too much and made the filament soften too early inside the extruder, eventually leading to a jam.
+
+To reduce warping without overheating the hardware, the enclosure temperature should be kept constant at around **50–55°C**. The best solution is a **thermostat-controlled outlet** with the sensor placed directly inside the enclosure. A hysteresis of about **5°C** would help eliminate dangerous temperature spikes caused by manual delay.
+
+---
+
+### Test 3
+#### Hypothesis: thermal equilibrium and part positioning
+By reducing heater power to around **400W**, a quasi-stationary thermal balance was achieved. In contrast to the earlier 750W tests, where manual regulation caused strong temperature swings, the enclosure temperature now remained relatively stable between **42°C and 44°C**.
+
+At this point, the average heat input from the heater was approximately equal to the heat loss through the enclosure and small leaks, which reduced large thermal gradients.
+
+This more stable environment reduced the risk of heat creep, because the temperature around the hotend stayed more constant and heat was less likely to travel too far into the heatbreak. As a result, filament feeding remained more reliable and premature softening of the filament was prevented.
+
+During this test, three identical parts were printed at the same time. The middle part remained almost perfect, while the top and bottom parts showed clear warping.
+
+This suggests that the middle position was located in the most thermally stable zone of the enclosure.
+
+Because the parts were partially connected through the brim, they could mechanically influence each other during cooling. As a result, shrink stress was concentrated mainly along the outer edges of the total print area, while the middle part remained in a relatively low-stress zone.
+
+This test suggests that, until the ideal ABS printing temperature of around **50–55°C** is reached, both a stable heat balance and the physical placement of parts inside the printer remain critical.
+
+---
+
+### Test 4
+- Speed: 100%
+- Glue: yes
+- Heater: 350W
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: custom
+
+**Failed reason:** average temperature too low, around **40°C**  
+**Consequence:** filament jammed in the upper part of the hotend. The hotend had to be retracted, the jammed section cut off, and the hotend reassembled.
+
+---
+
+### Test 5
+- Speed: 50%
+- Glue: yes
+- Heater: 375W
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: generic ABS
+
+**Failed reason:** extrusion check was not performed, and the print still failed because of the clog from Test 4.  
+However, it was observed that the **375W heater** could maintain a stable temperature of **50–55°C** for an extended period, around 30 minutes.
+
+---
+
+### Test 6
+- Speed: 100%
+- Glue: yes
+- Heater: 370W
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: generic ABS
+
+**Failed reason (conjecture):**
+- Filament may have been too wet
+- Glue stick may have caused poor adhesion to the build plate
+- Unknown machine failure may have occurred
+
+A full maintenance check was performed, but the exact cause could not be determined with certainty.
+
+At this point, I considered abandoning ABS and switching to **PETG or ASA** instead, or purchasing a more reliable and better-known ABS brand such as **Bambu Lab ABS**.
+
+---
+
+### Test 7
+- Speed: 100%
+- Glue: none
+- Heater: 370W
+- Temperature control: automatic
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: generic ABS
+
+This test had a properly controlled enclosure temperature, but a new issue appeared:
+
+**Failed reason (conjecture):**
+- The first layer did not stick to the heated bed
+
+This indicated that the remaining problem might not be enclosure temperature alone, but also extrusion reliability and first-layer behavior.
+
+---
+
+### Test 8
+- Speed: 50%
+- Glue: none
+- Heater: 370W
+- Temperature control: automatic
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: generic ABS
+
+This test was part of the continued troubleshooting process. It was used to verify whether reducing speed would improve adhesion and extrusion stability.
+
+---
+
+### Test 9
+- Speed: 100%
+- Glue: none
+- Heater: 370W
+- Temperature control: automatic
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: generic ABS
+
+During this test, the root cause of the earlier failures became clearer.
+
+**Failed reason (conjecture):**
+- The extruder gear had insufficient friction, and filament powder had accumulated on the gear surface
+- The hotend may have been partially clogged, causing excessive extrusion resistance at the start of printing
+
+After manually applying additional extrusion force, printing could continue normally.
+
+### Solution applied
+- Manually push the filament about 5 cm inward
+- Recover from the partially stuck state
+- Resume normal extrusion
+
+This was the first test that identified the extrusion path as a major bottleneck rather than only the thermal environment.
+
+---
+
+### Test 10
+- Speed: 100%
+- Glue: none
+- Heater: 370W
+- Temperature control: automatic
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: generic ABS
+
+### Test 11
+- Speed: 100%
+- Glue: none
+- Heater: 370W
+- Temperature control: automatic
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: enabled
+- Material profile: generic ABS
+
+From **Test 9 onward**, printing became successful and stable.  
+In total, **11 tests** were performed: the first **8** failed, and **successful printing began from Test 9**.
+
+---
+
+## 6. Problems Encountered
+
+### Cooling and thermal issues
+- Ambient temperature below **45°C** caused warping
+- Ambient temperature above **55°C** caused overheating
+- Fan speed was too high
+- Bed temperature was not optimal, especially at **110°C**
+- Cold air flow required a draft shield
+- Unstable enclosure temperature caused thermal swings
+
+### Extrusion and mechanical issues
+- Filament grinding
+- Poor grip on the extruder gear
+- Partial clogging in the hotend
+- Heat creep
+- Retraction problems near the hotend
+- Overhang cooling was too aggressive
+- Filament may have been too wet
+
+### Adhesion issues
+- First layer did not stick properly
+- Glue did not always improve the result
+- Build plate surface needed better preparation
+
+---
+
+## 7. Possible Solutions
+
+The following solutions were considered during the study:
+
+### Hardware and setup improvements
+- Buy a new hotend
+- Upgrade the enclosure insulation
+- Upgrade the build plate
+- Buy a thermostat-controlled outlet
+- Use a better quality build plate surface
+- Replace or improve the extruder system
+
+### Process and print settings
+- Buy glue for the bed
+- Switch from ABS to ASA
+- Reduce or increase maximum print speed depending on the test
+- Use a custom skirt / draft shield
+- Use support rafts if needed
+- Clean the build plate carefully before each print
+- Reduce cooling fan speed
+
+### Extrusion recovery and reliability
+- Manually push the filament forward when the extrusion path becomes partially stuck
+- Clear any clog in the hotend before restarting the print
+- Check the extruder gear for debris and insufficient grip
+
+### Notes on the brass gear idea
+One idea was to replace the plastic extruder gear with a brass gear.  
+However, this may actually be a **negative optimization** in some cases, because brass can transfer heat more easily and may soften the filament earlier in the feed path. For that reason, the brass gear idea should be treated carefully rather than assumed to be an automatic upgrade.
+
+---
+
+## 8. Current Conclusions
+
+This study showed that ABS printing is not determined by a single factor.  
+The result depends on the balance between enclosure temperature, airflow, bed adhesion, print speed, extrusion resistance, and hotend stability.
+
+### Main conclusions
+- ABS needs a **stable thermal environment**.
+- Very strong manual heating control creates temperature spikes and leads to failure.
+- A controlled enclosure temperature around **50–55°C** is much more useful than unstable overheating.
+- Heat creep can become a major problem if the enclosure becomes too hot.
+- First-layer failure may come from extrusion weakness, not only from bed adhesion.
+- The extruder gear and hotend condition are just as important as slicer settings.
+- From Test 9 onward, the process became stable after the extrusion problem was identified and recovered.
+
+Overall, the study suggests that ABS can be printed successfully, but only when the printer is treated as a **system** rather than a single machine setting problem.
+
+---
+
+## 9. Future Work
+
+Further testing could include:
+
+- Comparing ABS with ASA under the same conditions
+- Testing a better-quality ABS brand
+- Measuring the effect of different enclosure insulation levels
+- Testing a more reliable thermostat-controlled heating setup
+- Evaluating different build plate materials
+- Refining extrusion recovery procedures
+- Repeating the same model with different speeds and cooling settings to confirm repeatability
+
+---
+
+## 10. References
+
+Add useful references here, such as:
+
+- Filament manufacturer datasheets
+- Printer and hotend documentation
+- Build plate material guides
+- Technical resources on ABS warping, heat creep, and enclosure design
+- Notes from slicer profiles and test logs
