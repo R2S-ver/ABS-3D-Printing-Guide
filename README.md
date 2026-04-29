@@ -4,8 +4,8 @@
 
 ## ([English](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/README.md) | [中文](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/Chinese/README.md)) <br>
 # ABS 3D Printing Research
-*A practical research log on ABS printing behavior, thermal control, failure analysis, and process optimization.*
-> The goal is to document what actually happens during printing, why it happens, and what can be improved in a practical way.
+*A practical research log on ABS printing behavior, thermal control, failure analysis and process optimization.*
+> The goal is to document what actually happens during printing, why it happens and what can be improved in a practical way.
 
 </div>
 
@@ -26,7 +26,7 @@
 ## 1. Overview 
 
 Welcome to this research log! <br> 
-This repositories documents my experimental journey to understand **ABS filament printing**. ABS is notorious for warping and shrinking, and this study focuses on environmental temperature control, hardware reliability and mitigating "Heat Creep" through a series of tests.
+This repositories documents my experimental journey to understand **ABS filament printing**. ABS is notorious for warping and shrinking; and this study focuses on environmental temperature control, hardware reliability and mitigating "Heat Creep" through a series of tests.
 
 ---
 ## 2. Research Goal
@@ -37,7 +37,7 @@ ABS is a material that is often used for functional parts, but it is also known 
 ### Main goals of this study
 - Observe how ABS behaves under different enclosure temperatures and print conditions.
 - Identify the most common failure modes during printing.
-- Test how thermal stability affects warping, adhesion, and extrusion reliability.
+- Test how thermal stability affects warping, adhesion and extrusion reliability.
 - Experiment with how changes to different variables affect print quality.
 - Build a practical workflow that can later be reused for similar materials.
 
@@ -45,22 +45,22 @@ ABS is a material that is often used for functional parts, but it is also known 
 
 ## 3. Material Background
 
-**ABS (Acrylonitrile Butadiene Styrene)** is a widely used engineering thermoplastic known for its toughness, impact resistance, and relatively good heat resistance. Compared with PLA and PETG, it is generally better suited for parts that need stronger mechanical performance, better long-term durability, and improved resistance to higher temperatures.
+**ABS (Acrylonitrile Butadiene Styrene)** is a widely used engineering thermoplastic known for its toughness, impact resistance and relatively good heat resistance. Compared with PLA and PETG, it is generally better suited for parts that need stronger mechanical performance, better long-term durability and improved resistance to higher temperatures.
 
 ### ABS vs PLA and PETG
 
 - **PLA** is usually the easiest material to print. It has good surface quality and low warping, but it is less resistant to heat, impact, sunlight and long-term mechanical stress.
-- **PETG** sits between PLA and ABS in many cases. It is stronger and more durable than PLA, and it handles moisture and general wear better, but it can still be easier to print than ABS.
-- **ABS** is more demanding, but it offers better heat resistance, impact strength, and long-term usability for functional parts.
+- **PETG** sits between PLA and ABS in many cases. It is stronger and more durable than PLA and it handles moisture and general wear better, but it can still be easier to print than ABS.
+- **ABS** is more demanding, but it offers better heat resistance, impact strength and long-term usability for functional parts.
 
 ### Practical differences
 
 - **Service life:** ABS is generally better suited for long-term functional use than PLA, especially when parts are exposed to stress, heat or repeated handling.
 - **Resistance to the environment:** ABS usually performs better than PLA in warmer environments and under mechanical load. PETG also performs well, especially where toughness and moderate flexibility are needed.
-- **Water resistance:** ABS, PLA, and PETG are all commonly used for parts that may be exposed to moisture, but none of them are truly waterproof by default. Layer adhesion, infill, geometry and post-processing matter a lot. ABS is often preferred when better sealing or post-processing is needed.
+- **Water resistance:** ABS, PLA and PETG are all commonly used for parts that may be exposed to moisture, but none of them are truly waterproof by default. Layer adhesion, infill, geometry and post-processing matter a lot. ABS is often preferred when better sealing or post-processing is needed.
 - **Material performance:** ABS is typically stronger in heat and more impact-resistant than PLA. PETG is often easier to print than ABS while still offering good toughness, but ABS remains a more challenging material to dial in correctly.
 
-Because of these characteristics, ABS can be seen as a **real test of a consumer FDM printer’s stability and thermal control**. It is not just a material choice, but also a test of whether the machine, enclosure, and slicer settings are balanced well enough for demanding printing conditions.
+Because of these characteristics, ABS can be seen as a **real test of a consumer FDM printer’s stability and thermal control**. It is not just a material choice, but also a test of whether the machine, enclosure and slicer settings are balanced well enough for demanding printing conditions.
 
 The filament I use was sponsored by my friend [itsmeyaboi-debug](https://github.com/itsmeyaboi-debug). It have aged during storage and kept in an open space at room temperature(around 22°C) for an extended period, which may have affected its condition. Before printing, it was dried at **65°C for 8 hours** to reduce moisture-related issues.
 
@@ -156,7 +156,7 @@ This result suggests that, until the ideal ABS printing temperature of around **
 - Material profile: custom
 
 **Failed reason:** average temperature too low, around **40°C**  
-**Consequence:** filament jammed in the upper part of the hotend. The hotend had to be retracted, the jammed section cut off, and the hotend reassembled.
+**Consequence:** filament jammed in the upper part of the hotend. The hotend had to be retracted, the jammed section cut off and the hotend reassembled.
 
 ---
 
@@ -289,7 +289,7 @@ After manually applying additional extrusion force, printing could continue norm
 - Material profile: generic ABS
 
 From **Test 9 onward**, printing became successful and stable.  
-In total, **11 tests** were performed: the first **8** failed, and **successful printing began from Test 9**.
+In total, **11 tests** were performed: the first **8** failed and **successful printing began from Test 9**.
 
 ---
 
@@ -354,7 +354,7 @@ However, this may actually be a **negative optimization** in some cases, because
 
 ## 8. Current Conclusions
 
-This study shows that ABS printing is not governed by a single parameter, but by a **coupled system of thermal, mechanical, and flow-related variables**.
+This study shows that ABS printing is not governed by a single parameter, but by a **coupled system of thermal, mechanical and flow-related variables**.
 
 Successful printing is achieved only when these variables reach a stable balance, rather than being individually optimized.
 
@@ -362,7 +362,7 @@ Successful printing is achieved only when these variables reach a stable balance
 
 ### 8.1 Critical factors
 
-ABS printing should be treated as a **thermal management problem first**, and a slicing problem second.
+ABS printing should be treated as a **thermal management problem first** and a slicing problem second.
 
 The dominant factors are:
 - Enclosure temperature stability
@@ -511,13 +511,13 @@ Further testing could include:
 
 ## 10. Reflection
 
-This study made me realize that ABS is not just another filament choice. Compared with PLA and PETG, it can be much better suited for parts that need higher heat resistance, better long-term durability, and stronger resistance to repeated stress. In that sense, ABS opens up a range of functional applications that are harder to achieve reliably with PLA or PETG.
+This study made me realize that ABS is not just another filament choice. Compared with PLA and PETG, it can be much better suited for parts that need higher heat resistance, better long-term durability and stronger resistance to repeated stress. In that sense, ABS opens up a range of functional applications that are harder to achieve reliably with PLA or PETG.
 
 At the same time, this project also showed the limits of my testing method. In the early stage, the variables and control groups were not strict enough and several parameters were changed at the same time. To obtain cleaner conclusions in the future, I should ideally test only one variable at a time, even though that would require much more time and patience.
 
 Another important lesson was measurement accuracy. In the first few tests, the temperature sensor was not placed in an ideal position, so the recorded temperature may have been slightly misleading. Starting from Test 7, the sensor probe was moved to about 10 cm above and on the back side of the heated bed. This gave a more accurate reading of the enclosure temperature while avoiding interference with the extruder’s movement.
 
-Overall, this project taught me that material testing is not only about whether a print succeeds or fails. It is also about how well the testing environment is controlled, how reliable the measurements are, and how carefully each variable is isolated.
+Overall, this project taught me that material testing is not only about whether a print succeeds or fails. It is also about how well the testing environment is controlled, how reliable the measurements are and how carefully each variable is isolated.
 
 ---
 
