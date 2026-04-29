@@ -368,6 +368,8 @@ The result depends on the balance between enclosure temperature, airflow, bed ad
 
 Overall, the study suggests that ABS can be printed successfully at home, but only when the printer is treated as a **system** rather than a single machine setting problem.
 
+---
+
 #### Enclosure Understanding
 
 Initially, I assumed that the main purpose of an enclosure was to create a **stable thermal environment**. However, based on practical testing, this understanding turned out to be different.
