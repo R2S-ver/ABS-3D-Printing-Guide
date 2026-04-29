@@ -60,7 +60,7 @@ ABS is a material that is often used for functional parts, but it is also known 
 
 Because of these characteristics, ABS can be seen as a **real test of a consumer FDM printer’s stability and thermal control**. It is not just a material choice, but also a test of whether the machine, enclosure, and slicer settings are balanced well enough for demanding printing conditions.
 
-The filament I use was sponsored by [itsmeyaboi-debug](https://github.com/itsmeyaboi-debug). It have aged during storage. It was kept in an open space at room temperature(around 22C) for an extended period, which may have affected its condition. Before printing, it was dried at **65°C for 8 hours** to reduce moisture-related issues.
+The filament I use was sponsored by my friend [itsmeyaboi-debug](https://github.com/itsmeyaboi-debug). It have aged during storage. It was kept in an open space at room temperature(around 22C) for an extended period, which may have affected its condition. Before printing, it was dried at **65°C for 8 hours** to reduce moisture-related issues.
 
 ---
 
