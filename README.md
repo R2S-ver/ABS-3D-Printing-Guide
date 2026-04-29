@@ -131,7 +131,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 ---
 
 <img alt="3" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%203.png" width="1024" height="1024" /> <br>
-
+25对比45度 封箱内温度
 ### 测试 3
 #### 假设：热平衡与模型位置
 把加热功率降到大约 **400W** 后，封箱内终于进入了一个近似稳定的热平衡状态。和前面 750W 的测试相比，这次手动调节造成的温度起伏小了很多，封箱温度基本稳定在 **42°C 到 44°C** 之间。
