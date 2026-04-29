@@ -408,6 +408,7 @@ This is because:
 - A sufficiently warm and stable environment can still be maintained for a certain period
 
 This suggests that, under controlled conditions, the enclosure with upgraded isolation can passively maintain a usable thermal environment for ABS printing, especially for smaller parts.
+And also helps with gradual passive cooling after the print is completed (**Do not remove the printed part immediately after printing**).
 
 ---
 
