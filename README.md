@@ -528,6 +528,7 @@ Overall, this project taught me that material testing is not only about whether 
 **Filament:** 123-3D Filament ABS Zwart 1,75 mm 1 kg <br>
 **Nozzle:** Bambulab stainless steel 0.4mm <br>
 **Build plate:** Bambulab PEI build plate <br>
+**Extruder:** Bambulab black plastic gear (Recommend replace with a hardened steel gear; I doubt about full-metal brass gear) <br>
 **Room temprature:** 18-24°C <br>
 **Enclosure temprature:** 48-56°C (Recommend 45-50, higher temprature may cause higher chance of nozzle clogging) <br>
 ### Material setting:
