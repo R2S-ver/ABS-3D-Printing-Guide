@@ -512,10 +512,12 @@ Further testing could include:
 
 ## 10. Filament and Printer Setup
 
-**Printer:** Bambulab A1
-**Filament:** 123-3D Filament ABS Zwart 1,75 mm 1 kg
-**Nozzle:** Bambulab 0.4mm
-**Build plate:** Bambulab PEI build plate
+**Printer:** Bambulab A1 <br>
+**Filament:** 123-3D Filament ABS Zwart 1,75 mm 1 kg <br>
+**Nozzle:** Bambulab stainless steel 0.4mm <br>
+**Build plate:** Bambulab PEI build plate <br>
+**Room temprature:** 18-24°C
+**Enclosure temprature:** 48-56°C (Recommend 45-50, higher temprature may cause higher chance of nozzle clogging)
 ### Material setting:
 <img alt="12" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2012.png" width="1024" height="1024" /> <br>
 ### Printer settings:
