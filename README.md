@@ -19,7 +19,8 @@
 - [8. 目前的结论](#8-目前的结论)
 - [9. 后续计划](#9-后续计划)
 - [10. 复盘](#10-复盘)
-- [11. 参考资料](#11-参考资料)
+- [11. 材料和打印配置](#11-材料和打印配置)
+- [12. 参考资料](#12-参考资料)
 ---
 
 ## 1. 概览
@@ -510,6 +511,21 @@ ABS 在家用环境中是可以稳定打印的，但前提是：
 - 对比不同材料热床的效果（我对那种低温打印板挺好奇）
 - 继续优化挤出恢复流程
 - 用不同速度和冷却设置重复打印同一个模型，验证重复性
+
+
+
+
+
+## 10. 材料和切片设置
+
+**3D打印机:** 拓竹牌A1
+**耗材:** 123-3D牌 ABS Zwart 1,75 mm 1 kg
+**喷嘴头:** 原厂 0.4mm
+**打印板:** 原厂 PEI 打印板
+### 自定义材料设置:
+<img alt="14" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2014.png" width="1024" height="1024" /> <br>
+### 切片设置:
+<img alt="15" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2015.png" width="1024" height="1024" /> <br>
 
 ---
 ## 10. 复盘
