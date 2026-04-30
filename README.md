@@ -530,7 +530,7 @@ Overall, this project taught me that material testing is not only about whether 
 **Build plate:** Bambulab PEI build plate <br>
 **Extruder:** Bambulab black plastic gear (Recommend replace with a hardened steel gear; I doubt about full-metal brass gear) <br>
 **Room temprature:** 18-24°C <br>
-**Enclosure temprature:** 48-56°C (Recommend 45-50, higher temprature may cause higher chance of nozzle clogging) <br>
+**Enclosure temprature:** 48-56°C (Recommend 45-50, higher temprature may have higher chance of nozzle clogging) <br>
 ### Material setting:
 <img alt="12" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2012.png" width="1024" height="1024" /> <br>
 ### Printer settings:
