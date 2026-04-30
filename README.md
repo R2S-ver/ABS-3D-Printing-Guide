@@ -390,7 +390,7 @@ ABS 打印首先是一个**热管理问题**，其次才是切片参数问题。
 
 - ABS 需要一个**稳定的封箱温度区间（约 50–55°C）**  
   → 低于该范围：翘边明显增加  
-  → 高于该范围：容易出现热爬（heat creep）和挤出异常  
+  → 高于该范围：容易出现热蠕变（heat creep）和挤出异常 (堵料)
 
 - **温度稳定性比温度峰值更重要**  
   → 温度波动比“略低或略高”更致命  
@@ -512,21 +512,6 @@ ABS 在家用环境中是可以稳定打印的，但前提是：
 - 继续优化挤出恢复流程
 - 用不同速度和冷却设置重复打印同一个模型，验证重复性
 
-
-
-
-
-## 10. 材料和切片设置
-
-**3D打印机:** 拓竹牌A1
-**耗材:** 123-3D牌 ABS Zwart 1,75 mm 1 kg
-**喷嘴头:** 原厂 0.4mm
-**打印板:** 原厂 PEI 打印板
-### 自定义材料设置:
-<img alt="14" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2014.png" width="1024" height="1024" /> <br>
-### 切片设置:
-<img alt="15" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2015.png" width="1024" height="1024" /> <br>
-
 ---
 ## 10. 复盘
 
@@ -537,6 +522,24 @@ ABS 在家用环境中是可以稳定打印的，但前提是：
 总体来说，这次材料测试让我明白：材料研究并不只是看打印成功还是失败，更重要的是测试环境是否足够可控、测量是否足够准确，以及每一个变量是否被尽量分离开来。
 
 也希望这篇报告对你玩转3D打印的路上有所帮助~
+
+---
+
+## 10. 材料和切片设置
+
+**3D打印机:** 拓竹牌A1 <br>
+**耗材:** 123-3D牌 ABS Zwart 1,75 mm 1 kg <br>
+**喷嘴头:** 原厂 0.4mm <br>
+**挤出机:** 原厂 黑色塑料齿轮 (推荐更换成硬化钢齿轮，未验证全金属黄铜齿轮的可行性）<br>
+**打印板:** 原厂 PEI 打印板 <br>
+**室温:** 16-24摄氏度 <br>
+**封箱温度:** 48-56度 （推荐45-50度，更高温容易造成热蠕变和堵头） <br>
+### 自定义材料设置: 
+<img alt="14" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2014.png" width="1024" height="1024" /> <br>
+### 切片设置:
+<img alt="15" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2015.png" width="1024" height="1024" /> <br>
+
+
 
 ## 11. 参考资料
 
