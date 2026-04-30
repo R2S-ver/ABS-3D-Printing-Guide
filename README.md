@@ -20,8 +20,8 @@
 - [8. Current Conclusions](#8-current-conclusions)
 - [9. Future Work](#9-future-work)
 - [10. Self reflection](#10-reflection)
-- [10. Filament/Printer setup](#10-filament-and-printer-setup)
-- [11. References](#11-references)
+- [11. Filament/Printer setup](#11-filament-and-printer-setup)
+- [12. References](#12-references)
 ---
 
 ## 1. Overview 
@@ -510,7 +510,19 @@ Further testing could include:
 
 ---
 
-## 10. Filament and Printer Setup
+## 10. Reflection
+
+This study made me realize that ABS is not just another filament choice. Compared with PLA and PETG, it can be much better suited for parts that need higher heat resistance, better long-term durability and stronger resistance to repeated stress. In that sense, ABS opens up a range of functional applications that are harder to achieve reliably with PLA or PETG.
+
+At the same time, this project also showed the limits of my testing method. In the early stage, the variables and control groups were not strict enough and several parameters were changed at the same time. To obtain cleaner conclusions in the future, I should ideally test only one variable at a time, even though that would require much more time and patience.
+
+Another important lesson was measurement accuracy. In the first few tests, the temperature sensor was not placed in an ideal position, so the recorded temperature may have been slightly misleading. Starting from Test 7, the sensor probe was moved to about 10 cm above and on the back side of the heated bed. This gave a more accurate reading of the enclosure temperature while avoiding interference with the extruder’s movement.
+
+Overall, this project taught me that material testing is not only about whether a print succeeds or fails. It is also about how well the testing environment is controlled, how reliable the measurements are and how carefully each variable is isolated.
+
+---
+
+## 11. Filament and Printer Setup
 
 **Printer:** Bambulab A1 <br>
 **Filament:** 123-3D Filament ABS Zwart 1,75 mm 1 kg <br>
@@ -525,18 +537,6 @@ Further testing could include:
 
 ---
 
-## 11. Reflection
-
-This study made me realize that ABS is not just another filament choice. Compared with PLA and PETG, it can be much better suited for parts that need higher heat resistance, better long-term durability and stronger resistance to repeated stress. In that sense, ABS opens up a range of functional applications that are harder to achieve reliably with PLA or PETG.
-
-At the same time, this project also showed the limits of my testing method. In the early stage, the variables and control groups were not strict enough and several parameters were changed at the same time. To obtain cleaner conclusions in the future, I should ideally test only one variable at a time, even though that would require much more time and patience.
-
-Another important lesson was measurement accuracy. In the first few tests, the temperature sensor was not placed in an ideal position, so the recorded temperature may have been slightly misleading. Starting from Test 7, the sensor probe was moved to about 10 cm above and on the back side of the heated bed. This gave a more accurate reading of the enclosure temperature while avoiding interference with the extruder’s movement.
-
-Overall, this project taught me that material testing is not only about whether a print succeeds or fails. It is also about how well the testing environment is controlled, how reliable the measurements are and how carefully each variable is isolated.
-
----
-
-## 11. References
+## 12. References
 1. [Bambulab Basic maintenance](https://wiki.bambulab.com/en/a1/maintenance/basic-maintenance)
 2. [What is heat creep?](https://wiki.bambulab.com/zh/filament-acc/filament/heat-creep)
