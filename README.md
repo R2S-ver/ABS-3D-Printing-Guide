@@ -203,7 +203,7 @@ At this point, I want to give up trying on ABS and switching to **PETG or ASA** 
 The heater turns on at 48°C or below and turns off at 51°C or above.
 （In practice, after the heater is switched off, the enclosure temperature continues to rise by an additional 2–3°C before gradually cooling down.）<br>
 <img alt="5" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%205.png" width="1024" height="1024" /> <br>
-
+This image shows the passive cooling performance before and after the insulation upgrade. It is not a strict apples-to-apples comparison, because the enviroment temperature difference during the cooldowns was not the same. (According to Newton’s law of cooling, the smaller the temperature difference between the object and its surroundings, the slower the temperature changes. This effect can be seen in Test 8.)
 
 ### Test 7
 - Speed: 100%
