@@ -20,6 +20,7 @@
 - [8. Current Conclusions](#8-current-conclusions)
 - [9. Future Work](#9-future-work)
 - [10. Self reflection](#10-reflection)
+- [10. Filament/Printer setup](#10-filament-and-printer-setup)
 - [11. References](#11-references)
 ---
 
@@ -509,7 +510,20 @@ Further testing could include:
 
 ---
 
-## 10. Reflection
+## 10. Filament and Printer Setup
+
+**Printer:** Bambulab A1
+**Filament:** 123-3D Filament ABS Zwart 1,75 mm 1 kg
+**Nozzle:** Bambulab 0.4mm
+**Build plate:** Bambulab PEI build plate
+### Material setting:
+<img alt="12" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2012.png" width="1024" height="1024" /> <br>
+### Printer settings:
+<img alt="13" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2013.png" width="1024" height="1024" /> <br>
+
+---
+
+## 11. Reflection
 
 This study made me realize that ABS is not just another filament choice. Compared with PLA and PETG, it can be much better suited for parts that need higher heat resistance, better long-term durability and stronger resistance to repeated stress. In that sense, ABS opens up a range of functional applications that are harder to achieve reliably with PLA or PETG.
 
