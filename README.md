@@ -525,7 +525,7 @@ ABS 在家用环境中是可以稳定打印的，但前提是：
 
 ---
 
-## 10. 材料和切片设置
+## 11. 材料和切片设置
 
 **3D打印机:** 拓竹牌A1 <br>
 **耗材:** 123-3D牌 ABS Zwart 1,75 mm 1 kg <br>
@@ -541,7 +541,7 @@ ABS 在家用环境中是可以稳定打印的，但前提是：
 
 
 
-## 11. 参考资料
+## 12. 参考资料
 
 1. [A1 产品维护与保养](https://wiki.bambulab.com/zh/a1/maintenance/basic-maintenance)
 2. [什么是热蠕变？](https://wiki.bambulab.com/zh/filament-acc/filament/heat-creep)
