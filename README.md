@@ -279,7 +279,7 @@ After manually applying additional extrusion force, printing could continue norm
 - Brim and draft shield: enabled
 - Material profile: generic ABS
 
-### Test 11
+### Test 11 [2026-04-29]
 - Speed: 100%
 - Glue: none
 - Heater: 370W
