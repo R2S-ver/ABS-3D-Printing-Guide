@@ -292,6 +292,27 @@ After manually applying additional extrusion force, printing could continue norm
 From **Test 9 onward**, printing became successful and stable.  
 In total, **11 tests** were performed: the first **8** failed and **successful printing began from Test 9**.
 
+<img alt="6" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2016.jpeg" width="512" height="512" /> <br>
+
+### Test 11-14 [2026-05-02 UPDATE]
+- Speed: 100%
+- Glue: none
+- Heater: **off**
+- Temperature control: **off**
+- Fan speed: low
+- Build plate: cleaned
+- Brim and draft shield: **Only Brim**
+- Material profile: generic ABS
+**- Nozzle temprature: 255 → 260**
+
+This was a relatively aggressive test in which three variables were adjusted simultaneously to evaluate the final outcome. The result showed slight edge warping, although it was not severe. This suggests that, under the current conditions, environmental temperature control may still be necessary, meaning the temperature-controlled socket may still be useful for further reducing warping risk(Maybe 44-46°C is the sweet spot?). It also indicates that there may be a compromise temperature range: if the temperature is too high, the extruder is more likely to clog; if it is too low, the model becomes more prone to warping.
+
+One additional observation is that clogging does not occur only in high-temperature environments(around 50-55°C). Even in a relatively cool enclosure(around 30°C), clogging can still happen with some probability. This suggests that the issue may not be caused solely by excessive ambient heat(heat creep), but may also be related to insufficient hotend temperature. Based on this, I increased the hotend temperature from **255°C to 260°C**. After the adjustment, the clogging issue was reduced to some extent. Therefore, when frequent clogging occurs, it is recommended to slightly raise the nozzle temperature to improve extrusion stability.
+
+At the same time, it is worth noting that printing was still successful at the current temperature level(around 38-42°C) without active heating(around 46-52°C). In addition, with both the temperature-controlled socket and active heating turned off, the risk of nozzle clogging was significantly reduced, mainly because the filament was no longer softening too early inside the extruder(←This is a conjecture, and may not be correct). Another observation was that printing remained stable even with the draft shield disabled, which indicates that it is not strictly necessary, or its impact may be negligible. Since the draft shield itself is relatively thick and can easily deform and interfere with the printed part, it is recommended to disable it and enable only the brim (inside and outside, 3-5mm).
+
+Tests 11 - 13 all failed, and only test 14 succeeded. Further investigation showed that the main issue was not the overall temperature control, but a failure in the first layer. The main cause was identified as extruder gear grinding the filament, which stops the filament feeding. Therefore, it is recommended to replace the stock plastic gear with a 3rd-party hardened steel gear.
+
 ---
 
 ## 6. Problems Encountered
