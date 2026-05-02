@@ -294,7 +294,7 @@ In total, **11 tests** were performed: the first **8** failed and **successful p
 
 <img alt="6" src="https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/assets/images/ABS%203D%20Printing%20Guide%2016.jpeg" width="512" height="512" /> <br>
 
-### Test 11-14 [2026-05-02 UPDATE]
+### Test 12-15 [2026-05-02 UPDATE]
 - Speed: 100%
 - Glue: none
 - Heater: **off**
@@ -311,7 +311,7 @@ One additional observation is that clogging does not occur only in high-temperat
 
 At the same time, it is worth noting that printing was still successful at the current temperature level(around 38-42°C) without active heating(around 46-52°C). In addition, with both the temperature-controlled socket and active heating turned off, the risk of nozzle clogging was significantly reduced, mainly because the filament was no longer softening too early inside the extruder(←This is a conjecture, and may not be correct). Another observation was that printing remained stable even with the draft shield disabled, which indicates that it is not strictly necessary, or its impact may be negligible. Since the draft shield itself is relatively thick and can easily deform and interfere with the printed part, it is recommended to disable it and enable only the brim (inside and outside, 3-5mm).
 
-Tests 11 - 13 all failed, and only test 14 succeeded. Further investigation showed that the main issue was not the overall temperature control, but a failure in the first layer. The main cause was identified as extruder gear grinding the filament, which stops the filament feeding. Therefore, it is recommended to replace the stock plastic gear with a 3rd-party hardened steel gear.
+**Tests 12 through 14 all ended in failure and success was only achieved on test 15. After further investigation, the main issue may not have been heat creep from an excessively high enviroment temperature causing first-layer printing failure. It revealed that the root cause was clogging resulting from the extruder gear grinding the filament. It is speculated that during a cold start, uneven cooling of the filament between the extruder and the hot end leads to excessive resistance (a partial clog), combined with insufficient grip from the plastic extruder gear. This causes a failure to extrude material during the dynamic flow calibration step. However, manually applying downward force on the filament input side while the extruder gear turns allows the filament to break through the critical point and extrude, after which the rest of the model prints successfully. The problem reappears on the next cold start after the print is completed and the printer cools down. It is recommended to replace the stock plastic gear with a hardened steel gear.**
 
 ---
 
