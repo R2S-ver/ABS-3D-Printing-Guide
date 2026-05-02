@@ -80,7 +80,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 - 打印速度
 - 是否使用胶水
 - 打印板清洁程度
-- 是否使用 brim / draft shield (Brim和风罩)
+- 是否使用 brim / draft shield (切片软件里名为Brim和Skirt(风罩))
 - 材料配置文件
 - 自动控温
 - 挤出表现
@@ -91,7 +91,7 @@ ABS 常常被拿来做功能件，但它也比 PLA/PETG 这类常用耗材更挑
 - 封箱
 - 低风扇转速
 - 后续测试中会清洁PEI打印板
-- 多次使用 brim / draft shield (软件里名称为Brim和Skirt(风罩))
+- 多次使用 brim / draft shield
 
 ---
 
