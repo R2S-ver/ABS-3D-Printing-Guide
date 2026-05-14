@@ -5,7 +5,7 @@
 ---
 
 # ABS 3D Printing Research
-## ([English](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/README.md) | [中文](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/Chinese/README.md)) <br>
+([English](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/main/README.md) | [中文](https://github.com/R2S-ver/ABS-3D-Printing-Guide/blob/Chinese/README.md)) <br>
 
 *A practical research log on ABS printing behavior, thermal control, failure analysis and process optimization.*
 > The goal is to document what actually happens during printing, why it happens and what can be improved in a practical way.
